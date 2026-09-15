@@ -24,12 +24,15 @@ jobs:
     
      - name: Terraform Init
        run: terraform init
+       working-directory: ./env/prod
        
      - name: Terraform format
        run: terraform fmt 
+       working-directory: ./env/prod
        
      - name: Terraform Plan
        run: terraform plan 
+       working-directory: ./env/prod
          
         
     
